@@ -806,62 +806,21 @@
         <p class="section-subtitle">يتم فتح المجموعات وفق أولوية التسجيل واستيفاء المتطلبات الميدانية للبرنامج</p>
       </div>
 
-      <div class="form-wrapper">
-        <form id="regForm" onsubmit="handleRegistration(event)">
-          <div class="form-grid">
-            <div class="form-group">
-              <label class="form-label">الاسم بالكامل *</label>
-              <input type="text" id="regFullName" class="form-control" required placeholder="أدخل اسمك الرباعي">
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">رقم الهاتف / واتساب *</label>
-              <input type="tel" id="regPhone" class="form-control" required placeholder="01xxxxxxxxx" dir="ltr" style="text-align: right;">
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">البريد الإلكتروني</label>
-              <input type="email" id="regEmail" class="form-control" placeholder="example@domain.com" dir="ltr" style="text-align: right;">
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">الحقيبة التدريبية المطلوبة *</label>
-              <select class="form-control" id="formCourseSelect" required>
-                <option value="">اختر الحقيبة التدريبية...</option>
-                <option value="المسار التأسيسي للمحاسبة وتطبيقات Excel">المسار التأسيسي للمحاسبة وتطبيقات Excel (30 ساعة)</option>
-                <option value="إدارة المخازن في شركات الإنشاءات والمقاولات">إدارة المخازن في شركات الإنشاءات والمقاولات (24 ساعة)</option>
-                <option value="المحاسبة العملية ومسك الدفاتر والقوائم المالية">المحاسبة العملية ومسك الدفاتر والقوائم المالية (40 ساعة)</option>
-                <option value="محاسبة شركات الإنشاءات والمقاولات والمستخلصات">محاسبة شركات الإنشاءات والمقاولات والمستخلصات (30 ساعة)</option>
-                <option value="مراقبة التكاليف ومراكز التكلفة وتحليل الانحرافات">مراقبة التكاليف ومراكز التكلفة وتحليل الانحرافات (24 ساعة)</option>
-                <option value="مراقبة الوثائق الهندسية والإدارية Document Control">مراقبة الوثائق الهندسية والإدارية Document Control (24 ساعة)</option>
-                <option value="الضرائب والفواتير والإقرارات والمنظومة الإلكترونية">الضرائب والفواتير والإقرارات والمنظومة الإلكترونية (30 ساعة)</option>
-                <option value="أنظمة تخطيط الموارد السحابية Odoo ERP">أنظمة تخطيط الموارد السحابية Odoo ERP (30 ساعة)</option>
-                <option value="محاسبة التكاليف الصناعية وتشغيل المصانع">محاسبة التكاليف الصناعية وتشغيل المصانع (24 ساعة)</option>
-                <option value="العمليات المصرفية والاعتمادات المستندية وخزينة البنوك">العمليات المصرفية والاعتمادات المستندية وخزينة البنوك (30 ساعة)</option>
-                <option value="إدارة الموارد البشرية والشؤون الإدارية المستقلة">إدارة الموارد البشرية والشؤون الإدارية المستقلة (30 ساعة)</option>
-                <option value="تطبيقات Excel المتقدمة وتحليل البيانات وPower BI">تطبيقات Excel المتقدمة وتحليل البيانات وPower BI (24 ساعة)</option>
-                <option value="مسار السلامة والصحة المهنية وتأمين بيئة العمل OSH">مسار السلامة والصحة المهنية وتأمين بيئة العمل OSH (24 ساعة)</option>
-                <option value="مسار التسويق الرقمي وتطوير الأعمال وإدارة الهوية">مسار التسويق الرقمي وتطوير الأعمال وإدارة الهوية (24 ساعة)</option>
-              </select>
-            </div>
-
-            <div class="form-group full">
-              <label class="form-label">نظام التدريب المفضل *</label>
-              <select class="form-control" id="regMode" required>
-                <option value="تدريب حضوري بمعامل المركز المعتمدة">تدريب حضوري تطبيقي بمعامل المركز المعتمدة</option>
-                <option value="تدريب تفاعلي عن بُعد (Online Live)">تدريب تفاعلي عبر القاعات الافتراضية السحابية (Online Live)</option>
-              </select>
-            </div>
-
-            <div class="form-group full">
-              <label class="form-label">ملاحظات أو استفسارات</label>
-              <textarea class="form-control" id="regNotes" rows="3" placeholder="المؤهل الدراسي، الخبرات السابقة، أو أي استفسار تود طرحه..."></textarea>
-            </div>
-          </div>
-
-          <button type="submit" id="regSubmitBtn" class="form-submit-btn">إرسال طلب الحجز والتسجيل ←</button>
-          <div id="regStatusMsg" style="display:none; margin-top:16px; padding:16px; border-radius:8px; text-align:center; font-weight:bold; font-size:0.95rem; line-height:1.6;"></div>
-        </form>
+            <div class="form-wrapper" style="padding: 12px; background: #ffffff; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); overflow: hidden;">
+        <div style="text-align: center; margin-bottom: 16px; padding: 14px; background: #F8FAFC; border-radius: 12px; border: 1px solid #E2E8F0;">
+          <p style="margin: 0; font-size: 1rem; color: #0F172A; font-weight: 700;">
+            استمارة التسجيل الإلكتروني الرسمية المعتمدة
+          </p>
+          <p style="margin: 6px 0 0; font-size: 0.88rem; color: #64748B;">
+            يتم توثيق وحفظ طلبك آلياً في السجل التدريبي المعتمد فور الإرسال وفق أولوية التسجيل.
+          </p>
+        </div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2KLVQGm6JmAx5ugzyTQOaZz4Ocop8el__bx-5yPopGB4pYw/viewform?embedded=true" width="100%" height="950" frameborder="0" marginheight="0" marginwidth="0" style="border: none; border-radius: 12px; display: block; width: 100%; min-height: 900px;">جارٍ التحميل…</iframe>
+        <div style="text-align: center; margin-top: 16px;">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2KLVQGm6JmAx5ugzyTQOaZz4Ocop8el__bx-5yPopGB4pYw/viewform" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px; color: #0284C7; font-weight: 600; font-size: 0.92rem; text-decoration: none; padding: 10px 20px; background: #F0F9FF; border-radius: 8px; border: 1px solid #BAE6FD;">
+            <span>فتح استمارة التسجيل في نافذة مستقلة ملء الشاشة ↗</span>
+          </a>
+        </div>
       </div>
     </div>
   </section>
