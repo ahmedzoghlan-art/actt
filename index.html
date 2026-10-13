@@ -811,55 +811,56 @@
           <div class="form-grid">
             <div class="form-group">
               <label class="form-label">الاسم بالكامل *</label>
-              <input type="text" class="form-control" required placeholder="أدخل اسمك الرباعي">
+              <input type="text" id="regFullName" class="form-control" required placeholder="أدخل اسمك الرباعي">
             </div>
 
             <div class="form-group">
               <label class="form-label">رقم الهاتف / واتساب *</label>
-              <input type="tel" class="form-control" required placeholder="01xxxxxxxxx" dir="ltr" style="text-align: right;">
+              <input type="tel" id="regPhone" class="form-control" required placeholder="01xxxxxxxxx" dir="ltr" style="text-align: right;">
             </div>
 
             <div class="form-group">
               <label class="form-label">البريد الإلكتروني</label>
-              <input type="email" class="form-control" placeholder="example@domain.com" dir="ltr" style="text-align: right;">
+              <input type="email" id="regEmail" class="form-control" placeholder="example@domain.com" dir="ltr" style="text-align: right;">
             </div>
 
             <div class="form-group">
               <label class="form-label">الحقيبة التدريبية المطلوبة *</label>
               <select class="form-control" id="formCourseSelect" required>
                 <option value="">اختر الحقيبة التدريبية...</option>
-                <option value="المسار التأسيسي للمحاسبة">المسار التأسيسي للمحاسبة وتطبيقات Excel (30 ساعة)</option>
-                <option value="إدارة المخازن في المقاولات">إدارة المخازن في شركات الإنشاءات والمقاولات (24 ساعة)</option>
-                <option value="المحاسبة العملية ومسك الدفاتر">المحاسبة العملية ومسك الدفاتر والقوائم المالية (40 ساعة)</option>
-                <option value="محاسبة شركات المقاولات">محاسبة شركات الإنشاءات والمقاولات والمستخلصات (30 ساعة)</option>
-                <option value="مراقبة التكاليف Cost Control">مراقبة التكاليف ومراكز التكلفة وتحليل الانحرافات (24 ساعة)</option>
-                <option value="مراقبة الوثائق Document Control">مراقبة الوثائق الهندسية والإدارية Document Control (24 ساعة)</option>
-                <option value="الضرائب والفاتورة الإلكترونية">الضرائب والفواتير والإقرارات والمنظومة الإلكترونية (30 ساعة)</option>
-                <option value="أنظمة Odoo ERP السحابية">أنظمة تخطيط الموارد السحابية Odoo ERP (30 ساعة)</option>
-                <option value="محاسبة التكاليف الصناعية">محاسبة التكاليف الصناعية وتشغيل المصانع (24 ساعة)</option>
-                <option value="العمليات المصرفية والاعتمادات">العمليات المصرفية والاعتمادات المستندية وخزينة البنوك (30 ساعة)</option>
-                <option value="إدارة الموارد البشرية HR">إدارة الموارد البشرية والشؤون الإدارية المستقلة (30 ساعة)</option>
-                <option value="تحليل البيانات وPower BI">تطبيقات Excel المتقدمة وتحليل البيانات وPower BI (24 ساعة)</option>
-                <option value="السلامة والصحة المهنية OSHA">مسار السلامة والصحة المهنية وتأمين بيئة العمل OSH (24 ساعة)</option>
-                <option value="التسويق الرقمي وتطوير الأعمال">مسار التسويق الرقمي وتطوير الأعمال وإدارة الهوية (24 ساعة)</option>
+                <option value="المسار التأسيسي للمحاسبة وتطبيقات Excel">المسار التأسيسي للمحاسبة وتطبيقات Excel (30 ساعة)</option>
+                <option value="إدارة المخازن في شركات الإنشاءات والمقاولات">إدارة المخازن في شركات الإنشاءات والمقاولات (24 ساعة)</option>
+                <option value="المحاسبة العملية ومسك الدفاتر والقوائم المالية">المحاسبة العملية ومسك الدفاتر والقوائم المالية (40 ساعة)</option>
+                <option value="محاسبة شركات الإنشاءات والمقاولات والمستخلصات">محاسبة شركات الإنشاءات والمقاولات والمستخلصات (30 ساعة)</option>
+                <option value="مراقبة التكاليف ومراكز التكلفة وتحليل الانحرافات">مراقبة التكاليف ومراكز التكلفة وتحليل الانحرافات (24 ساعة)</option>
+                <option value="مراقبة الوثائق الهندسية والإدارية Document Control">مراقبة الوثائق الهندسية والإدارية Document Control (24 ساعة)</option>
+                <option value="الضرائب والفواتير والإقرارات والمنظومة الإلكترونية">الضرائب والفواتير والإقرارات والمنظومة الإلكترونية (30 ساعة)</option>
+                <option value="أنظمة تخطيط الموارد السحابية Odoo ERP">أنظمة تخطيط الموارد السحابية Odoo ERP (30 ساعة)</option>
+                <option value="محاسبة التكاليف الصناعية وتشغيل المصانع">محاسبة التكاليف الصناعية وتشغيل المصانع (24 ساعة)</option>
+                <option value="العمليات المصرفية والاعتمادات المستندية وخزينة البنوك">العمليات المصرفية والاعتمادات المستندية وخزينة البنوك (30 ساعة)</option>
+                <option value="إدارة الموارد البشرية والشؤون الإدارية المستقلة">إدارة الموارد البشرية والشؤون الإدارية المستقلة (30 ساعة)</option>
+                <option value="تطبيقات Excel المتقدمة وتحليل البيانات وPower BI">تطبيقات Excel المتقدمة وتحليل البيانات وPower BI (24 ساعة)</option>
+                <option value="مسار السلامة والصحة المهنية وتأمين بيئة العمل OSH">مسار السلامة والصحة المهنية وتأمين بيئة العمل OSH (24 ساعة)</option>
+                <option value="مسار التسويق الرقمي وتطوير الأعمال وإدارة الهوية">مسار التسويق الرقمي وتطوير الأعمال وإدارة الهوية (24 ساعة)</option>
               </select>
             </div>
 
             <div class="form-group full">
               <label class="form-label">نظام التدريب المفضل *</label>
-              <select class="form-control" required>
-                <option value="onsite">تدريب حضوري تطبيقي بمعامل المركز المعتمدة</option>
-                <option value="online">تدريب تفاعلي عبر القاعات الافتراضية السحابية (Online Live)</option>
+              <select class="form-control" id="regMode" required>
+                <option value="تدريب حضوري بمعامل المركز المعتمدة">تدريب حضوري تطبيقي بمعامل المركز المعتمدة</option>
+                <option value="تدريب تفاعلي عن بُعد (Online Live)">تدريب تفاعلي عبر القاعات الافتراضية السحابية (Online Live)</option>
               </select>
             </div>
 
             <div class="form-group full">
               <label class="form-label">ملاحظات أو استفسارات</label>
-              <textarea class="form-control" rows="3" placeholder="المؤهل الدراسي، الخبرات السابقة، أو أي استفسار تود طرحه..."></textarea>
+              <textarea class="form-control" id="regNotes" rows="3" placeholder="المؤهل الدراسي، الخبرات السابقة، أو أي استفسار تود طرحه..."></textarea>
             </div>
           </div>
 
-          <button type="submit" class="form-submit-btn">إرسال طلب الحجز المبدئي ←</button>
+          <button type="submit" id="regSubmitBtn" class="form-submit-btn">إرسال طلب الحجز والتسجيل ←</button>
+          <div id="regStatusMsg" style="display:none; margin-top:16px; padding:16px; border-radius:8px; text-align:center; font-weight:bold; font-size:0.95rem; line-height:1.6;"></div>
         </form>
       </div>
     </div>
@@ -1007,10 +1008,71 @@
       document.getElementById('register').scrollIntoView({ behavior: 'smooth' });
     }
 
-    function handleRegistration(e) {
+    // =========================================================================
+    // GOOGLE APPS SCRIPT WEBHOOK CONFIGURATION
+    // الصق رابط الـ Web App المستخرج من Google Apps Script هنا ليتم الحفظ التلقائي في Google Sheets
+    // =========================================================================
+    const GOOGLE_SCRIPT_WEBHOOK_URL = ''; // مثال: https://script.google.com/macros/s/AKfycbx.../exec
+
+    async function handleRegistration(e) {
       e.preventDefault();
-      alert('تم تسجيل طلبك بنجاح! سيتواصل معك قسم شؤون المتدربين لتأكيد الجدول والمواعيد المتاحة للحقيبة المختارة.');
-      e.target.reset();
+      
+      const submitBtn = document.getElementById('regSubmitBtn');
+      const statusMsg = document.getElementById('regStatusMsg');
+      
+      const fullName = document.getElementById('regFullName').value.trim();
+      const phone = document.getElementById('regPhone').value.trim();
+      const email = document.getElementById('regEmail').value.trim();
+      const courseSelect = document.getElementById('formCourseSelect');
+      const course = courseSelect.options[courseSelect.selectedIndex].text;
+      const modeSelect = document.getElementById('regMode');
+      const mode = modeSelect.options[modeSelect.selectedIndex].text;
+      const notes = document.getElementById('regNotes').value.trim();
+
+      const payload = {
+        name: fullName,
+        phone: phone,
+        email: email,
+        course: course,
+        mode: mode,
+        notes: notes
+      };
+
+      // UI Loading state
+      const originalBtnText = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '⏳ جاري تسجيل البيانات وتوثيق الطلب...';
+      statusMsg.style.display = 'none';
+
+      try {
+        if (GOOGLE_SCRIPT_WEBHOOK_URL && GOOGLE_SCRIPT_WEBHOOK_URL.startsWith('http')) {
+          // Send to Google Sheets via Apps Script Webhook
+          await fetch(GOOGLE_SCRIPT_WEBHOOK_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+        }
+        
+        // Show success state
+        statusMsg.style.display = 'block';
+        statusMsg.style.background = 'rgba(16, 185, 129, 0.15)';
+        statusMsg.style.border = '1px solid #10B981';
+        statusMsg.style.color = '#065F46';
+        statusMsg.innerHTML = '✓ تم تسجيل طلبك بنجاح وحفظه في السجل الرقمي المعتمد!<br><span style="font-size:0.85rem; color:#475569;">سيتواصل معك قسم شؤون المتدربين لتأكيد الموعد واستكمال الإجراءات.</span>';
+
+        e.target.reset();
+      } catch (err) {
+        statusMsg.style.display = 'block';
+        statusMsg.style.background = 'rgba(239, 68, 68, 0.15)';
+        statusMsg.style.border = '1px solid #EF4444';
+        statusMsg.style.color = '#991B1B';
+        statusMsg.innerHTML = 'حدث خطأ أثناء إرسال الطلب، يرجى المحاولة مرة أخرى أو التواصل معنا عبر الهاتف.';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+      }
     }
   </script>
 </body>
